@@ -30,7 +30,7 @@ img {
 
 body{
     font-family: Roboto, Raleway, sans-serif;
-    background-color: #F5F5F5;
+    background-color: var(--white-color);
     color: var(--main-text-color);
 }
 .container{
@@ -121,7 +121,7 @@ body{
     cursor: pointer;
 }
 .button-order{
-    min-width: 216px;
+    width: 216px;
     height: 50px;
     background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -135,13 +135,23 @@ body{
     letter-spacing: 0.06em;
     border: none;
     color: var(--white-color);
-    padding: 10px 32px;
 }
 .button-order:active{
     background-color: #188CE8;
 }
 /* ------------------------pictures with caption------------------------- */
+.examples-item-caption {
+    padding: 20px 24px;
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px; */
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
 .pic-caption{
+    /* font-family: inherit; */
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -159,8 +169,8 @@ body{
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    /* padding-top: 30px;
+    padding-bottom: 10px; */
 }
 .team-details{
     font-weight: 400;
@@ -170,6 +180,13 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--grey-text-color);
+    /* padding-bottom: 30px; */
+}
+.team-item-caption{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 /* ------------------------------- list styles-------------------------------- */
@@ -260,7 +277,7 @@ body{
 .advantages-container{
     padding-top: 94px;
     padding-bottom: 47px;
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
 }
 .list-adv {
     display: flex;
@@ -276,7 +293,7 @@ body{
 .galery-container{
     padding-top: 47px;
     padding-bottom: 94px;
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
 }
 .galery-list {
     display: flex;
@@ -330,7 +347,7 @@ body{
 .examples-container{
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -365,11 +382,4 @@ body{
 /* .examples-list-item{
     
 } */
-.examples-item-caption{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    border-top: none;
-}
+
